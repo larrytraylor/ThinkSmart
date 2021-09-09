@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ThinkSmart | Blog</title>
+  </head>
+  <body>
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"><i class="fa fa-cloud"></i>Think</span
+          >Smart
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cases">Cases</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Blog</h1>
+      </div>
+    </header>
+
+    <main>
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/blog/stocks.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>Putting Money to Work Now</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posted by
+                <strong>John Doe </strong> | September 19 2020
+              </p>
+              <p>
+                Hot stocks cool down, and sector rotation hits even the best
+                market darlings. Many names that hit fresh highs a few weeks ago
+                are in the market doghouse right now, but quality will
+                eventually win the day on Wall Street.
+              </p>
+              <a href="post.html" class="btn btn-dark">
+                <i class="fas fa-chervon"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/blog/blog2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-dark">
+              <h2>
+                Copper-Gold Ratio Breaks From Treasury Yields in New Normal
+              </h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posted by
+                <strong>Jane Doe </strong> | September 21 2020
+              </p>
+              <p>
+                The ratio had an uncanny link to 10-year yield levels over the
+                past five years. Yet in recent weeks, copper has rallied hard
+                while gold plunged, sending the ratio to levels that suggest
+                10-year yields should be about double -- even with today’s eight
+                basis-point jump to 0.92%.
+              </p>
+              <a href="post.html" class="btn btn-light">
+                <i class="fas fa-chervon"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/blog/blog3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>
+                Swiss Economy Grew Most in Four Decades After Curbs Lifted
+              </h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posted by
+                <strong>John Doe </strong> | September 23 2020
+              </p>
+              <p>
+                The Swiss economy grew the most since at least 1980 in the third
+                quarter as business activity recovered from shutdowns to stem
+                the coronavirus crisis. Gross domestic product increased 7.2%,
+                driven by a surge in consumption and investment in equipment and
+                construction.
+              </p>
+              <a href="post.html" class="btn btn-dark">
+                <i class="fas fa-chervon"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <!-- Footer -->
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"> <i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"> <i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"> <i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"> <i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2020 - ThinkSmart</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
