@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ThinkSmart&trade; Financial | Putting Money to Work Now</title>
+  </head>
+  <body>
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"><i class="fa fa-cloud"></i>Think</span
+          >Smart
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cases">Cases</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Blog</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="post">
+        <h2>Putting Money to Work Now</h2>
+        <p class="meta">
+          <i class="fas fa-user"></i> Posted by <strong>John Doe </strong> |
+          September 19 2020
+        </p>
+        <img src="images/blog/stocks.jpeg" alt="" />
+        <p>
+          Hot stocks cool down, and sector rotation hits even the best market
+          darlings. Many names that hit fresh highs a few weeks ago are in the
+          market doghouse right now, but quality will eventually win the day on
+          Wall Street.
+        </p>
+        <h6>Datadog</h6>
+        <p>
+          One of this year's bigger winners reported fresh financials this week,
+          and Wall Street wasn't impressed. Shares of the cloud-based provider
+          of website uptime tracking, security monitoring, and a growing suite
+          of analytical tools declined 6% on Wednesday after posting its
+          third-quarter results, and the stock is now 26% below the all-time
+          high it hit just four weeks ago. The quarter had everything you would
+          expect in an applause-worthy performance. The 61% increase in revenue
+          and adjusted profit of $0.05 a share were comfortably ahead of the 50%
+          top-line growth and $0.01 a share in net income that analysts
+          targeted. Datadog boosted its outlook for all of 2020, and the
+          guidance it initiated for the current quarter is also above where the
+          pros are parked. Datadog's streak of dollar-based net retention rate
+          above 130% (the rate of returning customers who are spending at least
+          30% more on Datadog's offerings than a year before) now stretches to
+          13 consecutive quarters. Bears can argue that Datadog's valuation was
+          stretched when it peaked last month, but with revenue growth outpacing
+          expectations, the bullish counter is that the multiple will keep
+          retracting organically even as the stock bounces back in the near
+          future.
+        </p>
+        <h6>DraftKings</h6>
+        <p>
+          I have a love-hate relationship with DraftKings as an investment, but
+          there's no denying that it's the top dog in wagering on fantasy
+          sports. More importantly, DraftKings is using that pole position as a
+          Trojan horse to get its more traditional sportsbook betting platform
+          into our heads. DraftKings has been brokering deals with leading
+          sports networks, and it's going to pay off a lot sooner than you
+          think. Investors were hopping onto DraftKings stock over the summer
+          and early fall as pro sports leagues across the country restarted
+          their seasons, but investors who once bet on DraftKings are now
+          wagering against the niche leader. The stock has fallen 35% since its
+          early October highs as of Wednesday's close, and it's well positioned
+          to crank out a blowout quarterly report on Friday morning. Revenue
+          rose 24% for the quarter that ended in June, and that was without any
+          of the major leagues in action. This is a classic pullback that could
+          bounce back later this week if it's able to deliver a strong financial
+          update.
+        </p>
+        <h6>Fastly</h6>
+        <p>
+          The hardest-hit of the three stocks here is Fastly. The next-gen
+          content delivery network ranked as one of this year's biggest winners
+          until it lowered its guidance four weeks ago, largely as a result of
+          losing Tiktok as its largest customer. Investors bailed on Fastly,
+          which lost nearly half of its value after declining in 12 of the last
+          13 trading days of October. Fastly is now trading 47% below the
+          all-time high it established in mid-October. Whenever a company
+          slashes its guidance, it's going to raise red flags. Datadog this week
+          showed us that even increasing your guidance sometimes isn't good
+          enough. However, the end result here is that Fastly is now roughly
+          half the company it was a month ago in terms of market valuation. Even
+          if TikTok doesn't come back -- and it was a big part of the business,
+          constituting nearly 11% of its revenue through the first nine months
+          of 2020 -- analysts see revenue growing by at least 30% in 2021.
+        </p>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"> <i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"> <i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"> <i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"> <i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2020 - ThinkSmart</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
